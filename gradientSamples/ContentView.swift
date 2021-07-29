@@ -22,6 +22,10 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .background(LinearGradient(gradient: brandGradient, startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
                     .clipShape(Capsule())
+            }.onTapGesture {
+                withAnimation(.easeInOut(duration: 3)) {
+                    
+                }
             }
             Button {
                 print("Linear gradient button tapped")
@@ -32,15 +36,27 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .overlay(Capsule().stroke(LinearGradient(gradient: brandGradient, startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/), lineWidth: 2))
             }
-            Button {
-                print("Radial gradient button tapped")
-            } label: {
-                Text("Radial gradient")
-                    .bold()
-                    .frame(width: 150, height: 150)
-                    .foregroundColor(.white)
-                    .background(RadialGradient(gradient: brandGradient, center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 5, endRadius: 120))
-                    .clipShape(Circle())
+            HStack {
+                Button {
+                    print("Radial gradient button tapped")
+                } label: {
+                    Text("Radial gradient")
+                        .bold()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .background(RadialGradient(gradient: brandGradient, center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 5, endRadius: 120))
+                        .clipShape(Circle())
+                }
+                Button {
+                    print("Radial gradient button tapped")
+                } label: {
+                    Text("Radial gradient")
+                        .bold()
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .background(AnimatedGradientBackground())
+                        .clipShape(Circle())
+                }
             }
             HStack(spacing: 20) {
                 Button {

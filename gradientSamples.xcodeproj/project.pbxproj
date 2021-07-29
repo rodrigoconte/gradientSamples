@@ -11,6 +11,7 @@
 		D5E1308426B211B900DE4A6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1308326B211B900DE4A6E /* ContentView.swift */; };
 		D5E1308626B211BC00DE4A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E1308526B211BC00DE4A6E /* Assets.xcassets */; };
 		D5E1308926B211BC00DE4A6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E1308826B211BC00DE4A6E /* Preview Assets.xcassets */; };
+		D5E1309126B2D33300DE4A6E /* AnimatedGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1309026B2D33300DE4A6E /* AnimatedGradientBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D5E1308526B211BC00DE4A6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5E1308826B211BC00DE4A6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5E1308A26B211BC00DE4A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E1309026B2D33300DE4A6E /* AnimatedGradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradientBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		D5E1308026B211B900DE4A6E /* gradientSamples */ = {
 			isa = PBXGroup;
 			children = (
+				D5E1309226B2D33900DE4A6E /* Elements */,
 				D5E1308126B211B900DE4A6E /* gradientSamplesApp.swift */,
 				D5E1308326B211B900DE4A6E /* ContentView.swift */,
 				D5E1308526B211BC00DE4A6E /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				D5E1308826B211BC00DE4A6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5E1309226B2D33900DE4A6E /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				D5E1309026B2D33300DE4A6E /* AnimatedGradientBackground.swift */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E1309126B2D33300DE4A6E /* AnimatedGradientBackground.swift in Sources */,
 				D5E1308426B211B900DE4A6E /* ContentView.swift in Sources */,
 				D5E1308226B211B900DE4A6E /* gradientSamplesApp.swift in Sources */,
 			);
